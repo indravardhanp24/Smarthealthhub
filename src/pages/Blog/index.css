@@ -1,0 +1,124 @@
+.blog{
+    margin-top: 0px;
+}
+
+.blog .top{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog .top div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog .top div h1:nth-child(1){
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.blog .top div h1:nth-child(2),h1:nth-child(3){
+    font-size: 40px;
+    background: linear-gradient(to right,#28809b,#da2aa8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog .top img{
+    width: 100%;
+    height: 60%;
+
+}
+
+.blog .services1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.blog .services1 .left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.blog .services1 .right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+.blog .services1 .right .div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    gap: 5px;
+}
+
+.blog .services1 .right .div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.blog .services1 .right .div div {
+    height: 100px;
+    width: auto;
+   
+}
+
+
+
+.blog .services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.blog .services div h4::after{
+    content: "";
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5px;
+    height: 5px;
+    display: block;
+    background-color: #da2aa8;
+}
+
+
+@media(min-width:200px){
+    .blog .top{
+        flex-direction: column;
+    }
+        .blog .services1 {
+            flex-direction: column;
+        }
+                .blog .services1 div:nth-child(2){
+                    flex-direction: 100%;
+                }
+}
+
+@media(min-width:768px) {
+    .blog .top {
+            flex-direction: row;
+        }
+    .blog .services1 {
+        flex-direction: row;
+    }
+        .blog .services1 {
+            flex-direction: row;
+        }
+    
+        .blog .services1 div:nth-child(2) {
+            flex-direction: 30%;
+        }
+}

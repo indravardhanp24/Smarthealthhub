@@ -1,0 +1,52 @@
+.cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.cards .card{
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+    margin: 5px;
+    color: #ffffff;
+    flex-grow: 1;
+}
+
+.cards .card p:nth-child(2){
+    color: #ffffff;
+}
+
+.setting{
+    color: #ffffff;
+    width: fit-content;
+    height: auto;
+}
+
+.modules{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modules .module{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    align-items: center;
+}
+
+.modules .module input{
+    width: 20px;
+}
+
+

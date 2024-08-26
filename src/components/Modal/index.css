@@ -1,0 +1,47 @@
+.modal{
+    width: 100%;
+    height: 100vh;
+    top: -60px;
+    display: flex;
+    position: absolute;
+    background-color: #99999999;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.modal .items{
+    height: fit-content;
+
+    min-width: 250px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    transition: transform .5s ease-in-out;
+}
+
+.modal .items .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .items .close-btn{
+    width: fit-content;
+    background-color: #ffffff;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shown{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
